@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="leftsidebar">
+            <div class="bannerLogo">
+                <img id="logo" src="odin-lined.png" alt=""><span id="logoText">Brodin</span>
+            </div>
+            <span id="photoCred">Photo by Darshan Patel @ Unsplash</span>
+        </div>
+        <div class="maincontent">
+            <p>
+                This is not a real online service and this sign up form won't get you
+                signed up for anything at all. Still, it's nice to dream, right? This
+                could be the best decision you never made.
+            </p>
+            <p>
+                Anyway, sign up and stuff.
+            </p>
+            <form onsubmit="return false;" action="index.html" method="post">
+                <fieldset class="inputField">
+                    <label for="firstName">First Name:</label>
+                    <label for="secondName">Second Name:</label>
+                    <input required type="text" id="firstName">
+                    <input required type="text" id="secondName">
+                    <label for="eMail">Email:</label>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input required type="email" id="eMail">
+                    <input required type="text" id="phoneNumber">
+                    <label for="passwordField">Password:</label>
+                    <label for="validateField">Confirm Password:</label>
+                    <input required type="password" id="passwordField" minlength="8" maxlength="20">
+                    <input required type="password" id="validateField">
+                </fieldset>
+                <fieldset>
+                    <button class="submitButton">
+                        Create Account
+                    </button>
+                </fieldset>
+            </form>
+            <p>Already have an account? Log in.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
