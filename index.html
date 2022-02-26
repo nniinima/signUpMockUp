@@ -35,21 +35,27 @@
             <form onsubmit="return false;" action="index.html" method="post">
                 <fieldset class="inputField">
                     <label for="firstName">First Name:</label>
-                    <label for="secondName">Second Name:</label>
+                    <label for="secondName">Last Name:</label>
                     <input required type="text" id="firstName">
                     <input required type="text" id="secondName">
+                    <div id="first name warning" class="warnings"></div>
+                    <div id="second name warning" class="warnings"></div>
                     <label for="eMail">Email:</label>
                     <label for="phoneNumber">Phone Number:</label>
                     <input required type="email" id="eMail">
-                    <input required type="text" pattern="[+][0-9]{11,14}" id="phoneNumber">
-                    <div class="hints"></div>
-                    <div class="hints">Example +35841234567</div>
+                    <input required type="text" pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}" id="phoneNumber">
+                    <div id="email hint" class="hints">Example: email@example.com</div>
+                    <div id="phone number hint" class="hints">Example: +35841234567</div>
+                    <div id="email warning" class="warnings"></div>
+                    <div id="phone number warning" class="warnings"></div>
                     <label for="passwordField">Password:</label>
                     <label for="validateField">Confirm Password:</label>
                     <input required type="password" id="passwordField" minlength="8" maxlength="20">
                     <input required type="password" id="validateField">
-                    <div class="hints">Password length should be 8-20</div>
-                    <div class="hints"></div>
+                    <div id="password hint" class="hints">Password length should be 8-20</div>
+                    <div id="password validation hint" class="hints">Match the passwords</div>
+                    <div id="password warning" class="warnings"></div>
+                    <div id="password validation warning" class="warnings"></div>
                 </fieldset>
                 <fieldset>
                     <button class="submitButton">
