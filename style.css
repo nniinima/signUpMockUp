@@ -10,11 +10,22 @@
     min-height: 100vh;
 }
 
+.description {
+    padding-bottom: 30px;
+}
+
 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
     margin-right: 100px;
     margin-left: 20px;
+}
+
+.emphasized {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 fieldset {
@@ -66,6 +77,11 @@ label {
     margin-right: 10%;
 }
 
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.18);
+}
+
 input:invalid {
     border-color: red;
   }
@@ -73,6 +89,13 @@ input:invalid {
   input:valid {
     border-color: green;
   }
+
+.hints{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5rem;
+    margin-left: 10%;
+    margin-bottom: -0.5rem;
+}
 
 .content {
     display: flex;
@@ -103,14 +126,25 @@ input:invalid {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.534);
-    margin-bottom: 300px;
     margin-top: 100px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
+.photoText {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 #photoCred{
-    color: white;
+    color: rgb(145, 145, 145);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 0.6rem;
+    text-align: right;
 }
 
 #logo {

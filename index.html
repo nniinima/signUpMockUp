@@ -13,17 +13,25 @@
             <div class="bannerLogo">
                 <img id="logo" src="odin-lined.png" alt=""><span id="logoText">Brodin</span>
             </div>
-            <span id="photoCred">Photo by Darshan Patel @ Unsplash</span>
+            <div class="photoText">
+            <span id="photoCred">Photo by Darshan Patel @ <a href="https://unsplash.com/@darshanp9">Unsplash</a></span>
+            </div>
         </div>
         <div class="maincontent">
+            <div class="description">
             <p>
                 This is not a real online service and this sign up form won't get you
                 signed up for anything at all. Still, it's nice to dream, right? This
                 could be the best decision you never made.
             </p>
             <p>
-                Anyway, sign up and stuff.
+                Anyway, sign up and stuff. If there was a backend to process your requests
+                it'd be a super cool service!
             </p>
+            <p class="emphasized">
+                Source: Trust me bro.
+            </p>
+            </div>
             <form onsubmit="return false;" action="index.html" method="post">
                 <fieldset class="inputField">
                     <label for="firstName">First Name:</label>
@@ -33,11 +41,15 @@
                     <label for="eMail">Email:</label>
                     <label for="phoneNumber">Phone Number:</label>
                     <input required type="email" id="eMail">
-                    <input required type="text" id="phoneNumber">
+                    <input required type="text" pattern="[+][0-9]{11,14}" id="phoneNumber">
+                    <div class="hints"></div>
+                    <div class="hints">Example +35841234567</div>
                     <label for="passwordField">Password:</label>
                     <label for="validateField">Confirm Password:</label>
                     <input required type="password" id="passwordField" minlength="8" maxlength="20">
                     <input required type="password" id="validateField">
+                    <div class="hints">Password length should be 8-20</div>
+                    <div class="hints"></div>
                 </fieldset>
                 <fieldset>
                     <button class="submitButton">
@@ -45,7 +57,7 @@
                     </button>
                 </fieldset>
             </form>
-            <p>Already have an account? Log in.</p>
+            <p>Already have an account? <a href="#">Log in.</a></p>
         </div>
     </div>
     <script src="scripts.js"></script>
